@@ -136,24 +136,37 @@ def betterEvaluationFunction(currentGameState):
     return score
 ```
 
-## **How to Run the Project**
-```python
-# Play Pacman manually
-python pacman.py
+## **Installation & Setup**
+### Prerequisites
+- Python 3.8 or higher
 
-# Run Reflex Agent
+### Steps
+1. Clone the Repository:
+```bash
+git clone https://github.com/chandleryang6/Multi-Agent-Pacman-AI.git
+cd Multi-Agent-Pacman-AI
+```
+
+2. Play Pacman manually
+```python
+python pacman.py
+```
+
+3. Run AI Agents
+```python
+# Reflex Agent
 python pacman.py -p ReflexAgent
 
-# Run Minimax Agent
+# Minimax Agent
 python pacman.py -p MinimaxAgent -a depth=3
 
-# Run Alpha-Beta Agent
+# Alpha-Beta Agent
 python pacman.py -p AlphaBetaAgent -a depth=3
 
-# Run Expectimax Agent
+# Expectimax Agent
 python pacman.py -p ExpectimaxAgent -a depth=3
 
-# Run Custom Evaluation Function
+# Custom Evaluation Function
 python pacman.py -p ExpectimaxAgent -a evalFn=betterEvaluationFunction
 ```
 
